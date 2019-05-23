@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: userserver
+server:
+  context-path: /userServer
+  port: 7071
+eureka:
+  instance:
+    appname: userServer
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7070/eureka/

@@ -5,20 +5,26 @@
     <artifactId>cloud-garbage-collection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>garbage-collection-service</artifactId>
-  <dependencies>
-        <!-- 配置Eureka依赖 -->
+  <artifactId>garbage-collection-eureka</artifactId>
+  <!-- Spring Cloud支撑包 -->
+    <dependencies>
+		<!-- Eureka依赖 -->
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- eureka服务依赖 -->
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
 		<!-- 配置web依赖 -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-    </dependencies>
-    <build>
+	  </dependencies>
+	<build>
 	    <!-- 打包插件 -->
 	    <plugins>
 	        <plugin>

@@ -4,8 +4,20 @@
   <artifactId>cloud-garbage-collection</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <dependencyManagement>
+	    <dependencies>
+	        <dependency>
+	            <groupId>org.springframework.cloud</groupId>
+	            <artifactId>spring-cloud-starter-parent</artifactId>
+	            <version>Edgware.SR3</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>
+	    </dependencies>
+	</dependencyManagement>
   <modules>
   	<module>garbage-collection-service</module>
   	<module>garbage-collection-domain</module>
+  	<module>garbage-collection-eureka</module>
   </modules>
 </project>
