@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>garbage-collection-service</module>
+  	<module>garbage-collection-domain</module>
   </modules>
 </project>
