@@ -1,6 +1,7 @@
 package com.dong.garbage.controller;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,7 @@ public class demo {
     private RedisTemplate<String, String> redisTemplate;
 
 
+    @ApiOperation("测试接口")
     @PostMapping("aaaaaaa")
     public void test(){
         redisTemplate.opsForValue().set("aaa","aaaa");
