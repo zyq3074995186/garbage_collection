@@ -8,7 +8,6 @@ spring:
         max-idle: 8
         max-wait: -1
         min-idle: 0
-    password: '123456'
     port: 6379
   application:
     name: userserver

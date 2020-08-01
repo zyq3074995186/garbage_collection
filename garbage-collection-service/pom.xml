@@ -22,6 +22,11 @@
 	  	    <artifactId>spring-boot-starter-data-redis</artifactId>
 	    </dependency>
 	  <dependency>
+		  <groupId>org.redisson</groupId>
+		  <artifactId>redisson</artifactId>
+		  <version>3.7.4</version>
+	  </dependency>
+	  <dependency>
 		  <groupId>org.apache.commons</groupId>
 		  <artifactId>commons-pool2</artifactId>
 	  </dependency>
@@ -52,10 +57,14 @@
     <build>
 	    <!-- 打包插件 -->
 	    <plugins>
-	        <plugin>
-	            <groupId>org.springframework.boot</groupId>
-	            <artifactId>spring-boot-maven-plugin</artifactId>
-	        </plugin>
-	    </plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>7</source>
+					<target>7</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
